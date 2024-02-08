@@ -1,0 +1,9 @@
+grpc:
+  client:
+    user-service:
+      address: static://localhost:6565
+      # if https is used - we specify TLS instead of plaintext
+      negotiationType: plaintext
+    movie-service:
+      address: static//localhost:7575
+      negotiationType: plaintext
